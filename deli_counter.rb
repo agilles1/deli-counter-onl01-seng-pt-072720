@@ -21,9 +21,9 @@ end
 def now_serving(array)
    #use array[0] in string then remove that item from array and repeat. Once empty new string.
    if array.empty? == false
-    line = array
-    puts "Currently serving #{line[0]}."
-    line.shift
+    #line = array
+    puts "Currently serving #{array[0]}."
+    array.shift
    else puts "There is nobody waiting to be served!"
    end
 end
